@@ -19,29 +19,29 @@ eos
   gem.test_files    = gem.files.grep(/^(test)/)
   gem.require_paths = ['lib']
 
-  gem.add_runtime_dependency 'fluentd', '1.6.3'
-  gem.add_runtime_dependency 'googleapis-common-protos', '1.3.9'
-  gem.add_runtime_dependency 'googleauth', '0.9.0'
-  gem.add_runtime_dependency 'google-api-client', '0.30.8'
-  gem.add_runtime_dependency 'google-cloud-logging', '1.6.6'
-  gem.add_runtime_dependency 'google-protobuf', '3.9.0'
-  gem.add_runtime_dependency 'grpc', '1.22.0'
-  gem.add_runtime_dependency 'json', '2.2.0'
-  gem.add_runtime_dependency 'opencensus', '0.5.0'
-  gem.add_runtime_dependency 'opencensus-stackdriver', '0.3.1'
+  gem.add_runtime_dependency 'fluentd'
+  gem.add_runtime_dependency 'googleapis-common-protos'
+  gem.add_runtime_dependency 'googleauth'
+  gem.add_runtime_dependency 'google-api-client'
+  gem.add_runtime_dependency 'google-cloud-logging'
+  gem.add_runtime_dependency 'google-protobuf'
+  gem.add_runtime_dependency 'grpc'
+  gem.add_runtime_dependency 'json'
+  gem.add_runtime_dependency 'opencensus'
+  gem.add_runtime_dependency 'opencensus-stackdriver'
 
-  gem.add_development_dependency 'mocha', '1.9.0'
+  gem.add_development_dependency 'mocha'
   # Keep this the same as in
   # https://github.com/fluent/fluent-plugin-prometheus/blob/master/fluent-plugin-prometheus.gemspec
-  gem.add_development_dependency 'prometheus-client', '< 0.10'
+  gem.add_development_dependency 'prometheus-client'
   # TODO(qingling128): Upgrade rake to 11.0+ after the following issues are
   # fixed because rake (11.0+) requires ALL variables to be explicitly
   # initialized.
   # https://github.com/googleapis/google-auth-library-ruby/issues/227
   # https://github.com/farcaller/rly/issues/2
-  gem.add_development_dependency 'rake', '10.5.0'
-  gem.add_development_dependency 'rubocop', '0.39.0'
-  gem.add_development_dependency 'test-unit', '3.3.3'
-  gem.add_development_dependency 'webmock', '3.6.2'
-  gem.add_development_dependency 'coveralls', '0.8.23'
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rubocop'
+  gem.add_development_dependency 'test-unit'
+  gem.add_development_dependency 'webmock'
+  gem.add_development_dependency 'coveralls'
 end
